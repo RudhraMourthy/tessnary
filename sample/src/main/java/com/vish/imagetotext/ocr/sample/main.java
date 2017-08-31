@@ -150,8 +150,9 @@ public class main  extends Activity {
     public String onDetect(View view)
     {
         String text = textView.getText().toString();
-
-
+        Intent i = new Intent(main.this,json_activity.class);
+        i.putExtra("key",text);
+        startActivity(i);
         return text;
     }
 
