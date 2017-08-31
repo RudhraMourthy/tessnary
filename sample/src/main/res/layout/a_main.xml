@@ -29,13 +29,13 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="26dp"
-        android:layout_marginLeft="29dp"
-        android:layout_marginStart="29dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_toStartOf="@+id/button"
         android:backgroundTint="@android:color/holo_green_dark"
         android:onClick="onLoadImageClick"
         android:padding="@dimen/activity_horizontal_margin"
@@ -44,22 +44,21 @@
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_marginRight="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="40dp"
         android:backgroundTint="@android:color/holo_blue_dark"
         android:minHeight="300dp"
         android:onClick="onCropImageClick"
         android:padding="@dimen/activity_horizontal_margin"
-        android:text="Detect"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_centerHorizontal="true" />
+        android:text="Detect" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_below="@+id/editText"
-        android:layout_marginStart="12dp"
         android:layout_toEndOf="@+id/button"
         android:onClick="onDetect"
         android:text="obtain" />
